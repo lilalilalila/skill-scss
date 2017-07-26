@@ -1,0 +1,118 @@
+
+
+.header {
+    width: 100%;
+    max-width: 1920px;
+    font-size: 1rem;
+    
+    .header-content {
+        width: 100%;
+        background-color: $white;
+        
+        > div {
+            width: 70%;
+            margin: 0 auto;
+            
+            @media screen and (max-width: 1200px) {
+                & {
+                    width: 98%;
+                }
+            }
+            
+            p {
+                display: inline-block;
+                
+                text-align: left;
+                line-height: 2rem;
+                color: $green;
+            }
+        
+            .link-img {
+                width: 96px;
+                float: right;
+                margin-right: 15px; 
+            
+                a {
+                    line-height: 2rem;
+                    margin-left: 8px;
+                    float: right;
+                }
+            
+                img {
+                    width: 24px;
+                    height: 24px;
+                    vertical-align: middle;
+                    margin-top: -4px;
+                }
+            }
+    
+            &:after {
+                @include clear-a;
+            }    
+        }
+        
+    }
+    
+    .nav {
+        width: 100%;
+        line-height: 4.5rem;
+        background-color: $green;
+        
+        > div {
+            width: 70%;
+            margin: 0 auto;
+            
+            @media screen and (max-width: 1200px) {
+                & {
+                    width: 98%;
+                }
+            }
+
+            li {
+                float: left;
+                text-align: right;
+                margin-left: 10px;
+            }
+        
+            ul {
+                width: 296px;
+                float: right;
+            
+                &:after {
+                    @inclue clear-a;
+                }
+            }
+        
+            a {
+                color: $white;
+                font-size: 1.2rem;
+                line-height: 4.5rem;
+                padding: 18px 15px;
+            
+                &:hover {
+                    border-bottom: 3px solid $white;
+                }
+            }
+        
+            &:after {
+                @include clear-a;
+            }
+            
+            @media screen and (max-width: 425px) {
+                ul {
+                    width: 52%;
+                }
+                
+                li {
+                    margin-left: -3px;
+                }
+                a {
+                    font-size: 1rem;
+                    padding-left: 8px;
+                    padding-right: 8px;
+                }
+            }
+        }
+        
+    }
+}
