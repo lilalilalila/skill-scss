@@ -254,7 +254,7 @@ a {
 }
 
 .footer > div .footer-left {
-  width: 210px;
+  width: 212px;
   text-align: left;
   font-size: 1rem;
   display: inline-block;
@@ -316,6 +316,10 @@ a {
 .footer > div .footer-center ul li a {
   font-size: 0.9rem;
   color: #fff;
+}
+
+.footer > div .footer-center ul li a:hover {
+  border-bottom: 2px solid #fff;
 }
 
 .footer > div .footer-center ul:after {
@@ -771,6 +775,7 @@ a {
   width: 10% !important;
   display: list-item;
   margin: 0;
+  padding-bottom: 5px;
 }
 
 @media screen and (max-width: 810px) {
@@ -782,6 +787,10 @@ a {
 
 .main-link ul li a {
   color: #999;
+}
+
+.main-link ul li a:hover {
+  border-bottom: 1px solid #999;
 }
 
 .main-link ul:after {

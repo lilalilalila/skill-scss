@@ -128,12 +128,12 @@ a {
   clear: both;
 }
 
-@media screen and (max-width: 410px) {
+@media screen and (max-width: 425px) {
   .header .nav > div ul {
     width: 52%;
   }
   .header .nav > div li {
-    margin-left: 1%;
+    margin-left: -3px;
   }
   .header .nav > div a {
     font-size: 1rem;
@@ -167,7 +167,7 @@ a {
 }
 
 .footer > div .footer-left {
-  width: 210px;
+  width: 212px;
   text-align: left;
   font-size: 1rem;
   display: inline-block;
@@ -231,6 +231,10 @@ a {
   color: #fff;
 }
 
+.footer > div .footer-center ul li a:hover {
+  border-bottom: 2px solid #fff;
+}
+
 .footer > div .footer-center ul:after {
   content: '';
   display: block;
@@ -284,7 +288,7 @@ a {
 }
 
 .header .nav img {
-  vertical-align: middle;
+  margin-top: 0.5%;
 }
 
 .main {

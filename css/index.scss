@@ -307,6 +307,7 @@
             width: 10% !important;
             display: list-item;
             margin: 0;
+            padding-bottom: 5px;
             
             @media screen and (max-width: 810px) {
                 & {
@@ -317,6 +318,10 @@
             
             a {
                 color: $font;
+                
+                &:hover {
+                    border-bottom: 1px solid $font;
+                }
             }
         }
             
