@@ -120,6 +120,12 @@
             vertical-align: middle;
             text-align: center;
             
+            @media screen and (max-width: 600px) {
+                & {
+                    float: left;
+                }
+            }
+            
             img {
                 width: 93px;
                 height: 93px;

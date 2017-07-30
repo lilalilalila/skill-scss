@@ -215,9 +215,9 @@ a {
   clear: both;
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 425px) {
   .header .nav > div ul {
-    width: 159px;
+    width: 52%;
   }
   .header .nav > div li {
     margin-left: -3px;
@@ -349,12 +349,6 @@ a {
   text-align: center;
 }
 
-@media screen and (max-width: 600px) {
-  .footer > div .footer-right {
-    float: left;
-  }
-}
-
 .footer > div .footer-right img {
   width: 93px;
   height: 93px;
@@ -380,7 +374,7 @@ a {
   font-size: 0.7rem;
 }
 
-@media screen and (max-width: 810px) {
+@media screen and (max-width: 600px) {
   * {
     font-size: 12px !important;
   }
@@ -538,7 +532,8 @@ a {
 
 @media screen and (max-width: 810px) {
   .main .line2 > div img {
-    margin-left: 30%;
+    margin-left: 16%;
+    margin-bottom: 3%;
   }
 }
 

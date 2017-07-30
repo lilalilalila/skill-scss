@@ -10,6 +10,12 @@
 @import 'out/li-between';
 
 
+@media screen and (max-width: 810px) {
+    * {
+        font-size: 12px !important;
+    }
+}
+
 .main {
     width: 100%;
     max-width: 1920px;
@@ -118,15 +124,14 @@
                 
                 @media screen and (max-width: 810px) {
                     & {
-                        margin-left: 16%;
-                        margin-bottom: 3%;
+                        margin-left: 30%;
                     }
                 }
             }
             
             //文字与圆
             > div {
-                width: 22%;
+                width: 17%;
                 display: inline-block;
                 vertical-align: middle;
                 
@@ -159,9 +164,15 @@
                 
                 p {
                    display: inline-block;
-                   width: 70%;
+                   width: 76%;
                    vertical-align: middle;
                    margin-left: 2%;
+                   
+                   @media screen and (max-width: 1200px) and (min-width: 810px) {
+                       & {
+                           width: 64%;
+                       }
+                   }
                 }
             }
         }

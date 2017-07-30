@@ -7,11 +7,30 @@
 @import 'header/header';
 @import 'footer/footer';
 
+@media screen and (max-width: 600px) {
+    * {
+        font-size: 12px !important;
+    }
+}
+
 
 .header {
     .nav {
-        img {
-            margin-top: 0.5%;
+        > div {
+            img {
+                width: 112px;
+                height: 51px;
+                float: left;
+                margin-top: 0.5%;
+                
+                @media screen and (max-width: 600px) {
+                    & {
+                        width: 81px;
+                        height: 100%;
+                        margin-top: 2.5%;
+                    }
+                }
+            }
         }
     }
 }
