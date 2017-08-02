@@ -88,6 +88,13 @@
                 font-size: 1.2rem;
                 line-height: 4.5rem;
                 padding: 18px 15px;
+                
+                @media screen and (max-width: 600px) {
+                    & {
+                        padding-top: 15px;
+                        padding-bottom: 15px;
+                    }
+                }
             
                 &:hover {
                     border-bottom: 3px solid $white;

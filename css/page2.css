@@ -118,6 +118,13 @@ a {
   padding: 18px 15px;
 }
 
+@media screen and (max-width: 600px) {
+  .header .nav > div a {
+    padding-top: 15px;
+    padding-bottom: 15px;
+  }
+}
+
 .header .nav > div a:hover {
   border-bottom: 3px solid #fff;
 }

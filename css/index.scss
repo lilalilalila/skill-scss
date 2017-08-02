@@ -10,9 +10,37 @@
 @import 'out/li-between';
 
 
-@media screen and (max-width: 810px) {
     * {
         font-size: 12px !important;
+    }
+
+.header {
+    .nav {
+        > div {
+            ul {
+                width: 296px;
+                
+                @media screen and (max-width: 600px) {
+                    & {
+                        width: 160px;
+                    }
+                }
+                
+                li {
+                    a {
+                        font-size: 1.4rem !important;
+                        line-height: 5.25rem !important;
+                        
+                        @media screen and (max-width: 600px) {
+                            & {
+                                font-size: 1rem !important;
+                                line-height: 4.5rem !important;
+                            }
+                        }
+                    }
+                }
+            }
+        }
     }
 }
 
@@ -21,6 +49,7 @@
     max-width: 1920px;
     overflow-x: hidden;
     background-color: $bg-color;
+    margin-top: -6px;
     
     > div {
         width: 70%;
@@ -54,6 +83,8 @@
             @media screen and (max-width: 810px) {
                 & {
                     width: 100%;
+                    padding: 0;
+                    margin: 0;
                 }
             }
             
@@ -70,12 +101,30 @@
                 font-size: 1rem;
                 color: $font;
                 margin-left: 3%;
+                
+                @media screen and (max-width: 810px) {
+                    & {
+                        text-align: center;
+                    }
+                }
             }
         }
         
         .line1-border {
             border-left: 2px dashed $border;
             padding-top: 1%;
+            
+            @media screen and (max-width: 810px) {
+                & {
+                    width: 141px;
+                    margin-left: 37%;
+                    padding-left: 15px;
+                    
+                    p {
+                        text-align: left;
+                    }
+                }
+            }
             
             .number {
                 padding-left: 21px;
@@ -90,7 +139,7 @@
                     
                 @media screen and (max-width: 810px) {
                     & {
-                        margin-top: 4.5%;
+                        margin-top: 21.5%;
                     }
                 }
             }
@@ -104,6 +153,30 @@
             text-align: center;
         }
         
+        .hidden-img {
+            display: none;
+            
+            img {
+                width: 24px;
+                height: 22px;
+            }
+            
+            @media screen and (max-width: 810px) {
+                & {
+                    display: block;
+                    margin-left: 46.5%;
+                    padding-left: 0;
+                    width: 6%;
+                    height: 26px;
+                            
+                    -webkit-transform: rotate(90deg);
+                    -moz-transform: rotate(90deg);
+                    -ms-transform: rotate(90deg);
+                    transform: rotate(90deg);
+                }
+            }
+        }
+        
         //整排
         > div {
             width: 100%;
@@ -114,24 +187,45 @@
             @media screen and (max-width: 810px) {
                 & {
                     height: 100%;
+                    width: 47%;
+                    padding-left: 7%;
+                    margin-left: auto;
+                    margin-right: auto;
                 }
             }
             
-            img {
-                width: 28px;
-                height: 26px;
-                vertical-align: middle;
+            
+            .line2-img {
+                width: 6%;
+                text-align: center;
                 
                 @media screen and (max-width: 810px) {
                     & {
-                        margin-left: 30%;
+                        margin: 3% 36%;
+                    }
+                }
+                
+                img {
+                    width: 24px;
+                    height: 22px;
+                    vertical-align: middle;
+                
+                    @media screen and (max-width: 810px) {
+                        & {
+                            margin-left: 30%;
+                            
+                            -webkit-transform: rotate(90deg);
+                            -moz-transform: rotate(90deg);
+                            -ms-transform: rotate(90deg);
+                            transform: rotate(90deg);
+                        }
                     }
                 }
             }
             
             //文字与圆
             > div {
-                width: 17%;
+                width: 18%;
                 display: inline-block;
                 vertical-align: middle;
                 
@@ -164,9 +258,10 @@
                 
                 p {
                    display: inline-block;
-                   width: 76%;
+                   width: 66%;
                    vertical-align: middle;
                    margin-left: 2%;
+                   color: $font;
                    
                    @media screen and (max-width: 1200px) and (min-width: 810px) {
                        & {
@@ -195,6 +290,12 @@
             left: 50%;
             margin-left: -25px;
             
+            @media screen and (max-width: 810px) {
+                & {
+                    bottom: 0;
+                }
+            }
+            
             li {
                 width: 10px;
                 height: 10px;
@@ -203,6 +304,10 @@
                 background-color: $white;
                 float: left;
                 margin-right: 8px;
+            }
+            
+            .active {
+                background-color: $green;
             }
             
             &:after {
@@ -223,6 +328,7 @@
                 @media screen and (max-width: 810px) {
                     & {
                         width: 100%;
+                        padding: 5% 0;
                     }
                 }
                 
@@ -240,6 +346,12 @@
                     color: $font;
                     text-align: left;
                     line-height: 1.7rem;
+                    
+                    @media screen and (max-width: 810px) {
+                        & {
+                            padding: 0 7%;
+                        }
+                    }
                 }
             }
         }

@@ -118,6 +118,13 @@ a {
   padding: 18px 15px;
 }
 
+@media screen and (max-width: 600px) {
+  .header .nav > div a {
+    padding-top: 15px;
+    padding-bottom: 15px;
+  }
+}
+
 .header .nav > div a:hover {
   border-bottom: 3px solid #fff;
 }
@@ -392,7 +399,7 @@ a {
 }
 
 .main > div .main-left ul li {
-  width: 63px;
+  width: 66px;
   margin-left: auto;
   margin-right: auto;
   margin-top: 10%;

@@ -205,6 +205,13 @@ a {
   padding: 18px 15px;
 }
 
+@media screen and (max-width: 600px) {
+  .header .nav > div a {
+    padding-top: 15px;
+    padding-bottom: 15px;
+  }
+}
+
 .header .nav > div a:hover {
   border-bottom: 3px solid #fff;
 }
@@ -380,9 +387,29 @@ a {
   font-size: 0.7rem;
 }
 
-@media screen and (max-width: 810px) {
-  * {
-    font-size: 12px !important;
+* {
+  font-size: 12px !important;
+}
+
+.header .nav > div ul {
+  width: 296px;
+}
+
+@media screen and (max-width: 600px) {
+  .header .nav > div ul {
+    width: 160px;
+  }
+}
+
+.header .nav > div ul li a {
+  font-size: 1.4rem !important;
+  line-height: 5.25rem !important;
+}
+
+@media screen and (max-width: 600px) {
+  .header .nav > div ul li a {
+    font-size: 1rem !important;
+    line-height: 4.5rem !important;
   }
 }
 
@@ -391,6 +418,7 @@ a {
   max-width: 1920px;
   overflow-x: hidden;
   background-color: #fafafa;
+  margin-top: -6px;
 }
 
 .main > div {
@@ -449,6 +477,8 @@ a {
 @media screen and (max-width: 810px) {
   .main .line1 > div {
     width: 100%;
+    padding: 0;
+    margin: 0;
   }
 }
 
@@ -467,9 +497,26 @@ a {
   margin-left: 3%;
 }
 
+@media screen and (max-width: 810px) {
+  .main .line1 > div p {
+    text-align: center;
+  }
+}
+
 .main .line1 .line1-border {
   border-left: 2px dashed #dedede;
   padding-top: 1%;
+}
+
+@media screen and (max-width: 810px) {
+  .main .line1 .line1-border {
+    width: 141px;
+    margin-left: 37%;
+    padding-left: 15px;
+  }
+  .main .line1 .line1-border p {
+    text-align: left;
+  }
 }
 
 .main .line1 .line1-border .number {
@@ -485,7 +532,7 @@ a {
 
 @media screen and (max-width: 810px) {
   .main .line1 .line1-border .number {
-    margin-top: 4.5%;
+    margin-top: 21.5%;
   }
 }
 
@@ -493,6 +540,29 @@ a {
   margin-bottom: 3%;
   font-size: 1.2rem;
   text-align: center;
+}
+
+.main .line2 .hidden-img {
+  display: none;
+}
+
+.main .line2 .hidden-img img {
+  width: 24px;
+  height: 22px;
+}
+
+@media screen and (max-width: 810px) {
+  .main .line2 .hidden-img {
+    display: block;
+    margin-left: 46.5%;
+    padding-left: 0;
+    width: 6%;
+    height: 26px;
+    -webkit-transform: rotate(90deg);
+    -moz-transform: rotate(90deg);
+    -ms-transform: rotate(90deg);
+    transform: rotate(90deg);
+  }
 }
 
 .main .line2 > div {
@@ -527,23 +597,42 @@ a {
 @media screen and (max-width: 810px) {
   .main .line2 > div {
     height: 100%;
+    width: 47%;
+    padding-left: 7%;
+    margin-left: auto;
+    margin-right: auto;
   }
 }
 
-.main .line2 > div img {
-  width: 28px;
-  height: 26px;
+.main .line2 > div .line2-img {
+  width: 6%;
+  text-align: center;
+}
+
+@media screen and (max-width: 810px) {
+  .main .line2 > div .line2-img {
+    margin: 3% 36%;
+  }
+}
+
+.main .line2 > div .line2-img img {
+  width: 24px;
+  height: 22px;
   vertical-align: middle;
 }
 
 @media screen and (max-width: 810px) {
-  .main .line2 > div img {
+  .main .line2 > div .line2-img img {
     margin-left: 30%;
+    -webkit-transform: rotate(90deg);
+    -moz-transform: rotate(90deg);
+    -ms-transform: rotate(90deg);
+    transform: rotate(90deg);
   }
 }
 
 .main .line2 > div > div {
-  width: 17%;
+  width: 18%;
   display: inline-block;
   vertical-align: middle;
 }
@@ -577,9 +666,10 @@ a {
 
 .main .line2 > div > div p {
   display: inline-block;
-  width: 76%;
+  width: 66%;
   vertical-align: middle;
   margin-left: 2%;
+  color: #999;
 }
 
 @media screen and (max-width: 1200px) and (min-width: 810px) {
@@ -607,6 +697,12 @@ a {
   margin-left: -25px;
 }
 
+@media screen and (max-width: 810px) {
+  .main .line3 ul {
+    bottom: 0;
+  }
+}
+
 .main .line3 ul li {
   width: 10px;
   height: 10px;
@@ -615,6 +711,10 @@ a {
   background-color: #fff;
   float: left;
   margin-right: 8px;
+}
+
+.main .line3 ul .active {
+  background-color: #29b078;
 }
 
 .main .line3 ul:after {
@@ -659,6 +759,7 @@ a {
 @media screen and (max-width: 810px) {
   .main .line3 .item > div {
     width: 100%;
+    padding: 5% 0;
   }
 }
 
@@ -676,6 +777,12 @@ a {
   color: #999;
   text-align: left;
   line-height: 1.7rem;
+}
+
+@media screen and (max-width: 810px) {
+  .main .line3 .item > div p {
+    padding: 0 7%;
+  }
 }
 
 .main .line4 h4 {
