@@ -54,6 +54,12 @@ a {
   color: #29b078;
 }
 
+@media screen and (max-width: 600px) {
+  .header .header-content > div .header-visited p {
+    font-size: 0.8rem !important;
+  }
+}
+
 .header .header-content > div .header-visited .link-img {
   width: 96px;
   float: right;
@@ -74,8 +80,9 @@ a {
 }
 
 @media screen and (max-width: 600px) {
-  .header .header-content > div .header-visited {
-    display: none;
+  .header .header-content > div .header-visited .link-img img {
+    width: 18px;
+    height: 18px;
   }
 }
 
@@ -92,12 +99,6 @@ a {
 .header .header-content > div .header-hidden a {
   font-size: 1rem;
   line-height: 2rem;
-}
-
-@media screen and (max-width: 600px) {
-  .header .header-content > div .header-hidden {
-    display: block;
-  }
 }
 
 .header .header-content > div:after {
