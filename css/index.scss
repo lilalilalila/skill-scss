@@ -34,7 +34,7 @@
                         @media screen and (max-width: 600px) {
                             & {
                                 font-size: 1rem !important;
-                                line-height: 4.5rem !important;
+                                line-height: 1.5rem !important;
                             }
                         }
                     }
@@ -131,7 +131,7 @@
                 color: $green;
                 line-height: 1rem;
                 margin-top: 10.5%;
-                background-image: url('../img/技能树首页_25.jpg');
+                background-image: url('../img/技能树首页_25.png');
                 @include bg-img(
                     $bg-s-x: 11px,
                     $bg-s-y: 14px,
@@ -378,6 +378,12 @@
                 text-align: center;
                 margin: 0;
                 
+                &:hover {
+                    -webkit-box-shadow: 0 0 30px $border;
+                    box-shadow: 0 0 30px $border;
+                    z-index: 3;
+                }
+                
                 @media screen and (max-width: 810px) {
                     & {
                         width: 100%;
@@ -390,11 +396,6 @@
                 
             }
                 
-            .img-border {
-                -webkit-box-shadow: 0 0 30px $border;
-                box-shadow: 0 0 30px $border;
-                z-index: 3;
-            }
         }
     }
     

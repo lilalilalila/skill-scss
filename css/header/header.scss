@@ -19,30 +19,59 @@
                 }
             }
             
-            p {
-                display: inline-block;
+            .header-visited {
+                p {
+                    display: inline-block;
                 
-                text-align: left;
-                line-height: 2rem;
-                color: $green;
-            }
-        
-            .link-img {
-                width: 96px;
-                float: right;
-                margin-right: 15px; 
-            
-                a {
+                    text-align: left;
                     line-height: 2rem;
-                    margin-left: 8px;
-                    float: right;
+                    color: $green;
                 }
+        
+                .link-img {
+                    width: 96px;
+                    float: right;
+                    margin-right: 15px; 
             
-                img {
-                    width: 24px;
-                    height: 24px;
-                    vertical-align: middle;
-                    margin-top: -4px;
+                    a {
+                        line-height: 2rem;
+                        margin-left: 8px;
+                        float: right;
+                    }
+            
+                    img {
+                        width: 24px;
+                        height: 24px;
+                        vertical-align: middle;
+                        margin-top: -4px;
+                    }
+                }
+                
+                @media screen and (max-width: 600px) {
+                    & {
+                        display: none;
+                    }
+                }
+            }
+            
+            .header-hidden {
+                float: right;
+                display: none;
+            
+                span {
+                    margin: 0 6px;
+                    line-height: 2rem;
+                }
+                
+                a {
+                    font-size: 1rem;
+                    line-height: 2rem;
+                }
+                
+                @media screen and (max-width: 600px) {
+                    & {
+                        display: block;
+                    }
                 }
             }
     
@@ -57,6 +86,12 @@
         width: 100%;
         line-height: 4.5rem;
         background-color: $green;
+        
+        @media screen and (max-width: 600px) {
+            & {
+                line-height: 4rem;
+            }
+        }
         
         > div {
             width: 70%;
@@ -77,6 +112,12 @@
             ul {
                 width: 296px;
                 float: right;
+                
+                @media screen and (max-width: 600px) {
+                    & {
+                        display: none;
+                    }
+                }
             
                 &:after {
                     @inclue clear-a;
@@ -117,6 +158,54 @@
                     font-size: 1rem;
                     padding-left: 8px;
                     padding-right: 8px;
+                }
+            }
+            
+            .nav-hidden {
+                float: right;
+                position: relative;
+                display: none;
+                margin-right: 15px;
+                
+                @media screen and (max-width: 600px) {
+                    & {
+                        display: inline-block;
+                    }
+                }
+                
+                img {
+                    width: 17px;
+                    height: 17px;
+                    vertical-align: middle;
+                }
+                
+                ul {
+                    width: 85px;
+                    text-align: center;
+                    background-color: $green;
+                    display: none;
+                    position: absolute;
+                    top: 33px;
+                    left: -48px;
+                    z-index: 99999999;
+                    height: 200px;
+                    
+                    li {
+                        margin-left: 0;
+                        float: none;
+                        text-align: center;
+                        line-height: 4rem;
+                        
+                        a {
+                            line-height: 1.5rem;
+                        }
+                    }
+                }
+                
+                &:hover {
+                    ul {
+                        display: block;
+                    }
                 }
             }
         }

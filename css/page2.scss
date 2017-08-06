@@ -27,8 +27,14 @@
                     & {
                         width: 81px;
                         height: 100%;
-                        margin-top: 2.5%;
+                        margin: 1.5%;
                     }
+                }
+            }
+            
+            .nav-hidden {
+                > img {
+                    margin-top: 17px;
                 }
             }
         }
