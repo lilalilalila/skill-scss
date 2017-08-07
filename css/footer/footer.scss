@@ -36,7 +36,9 @@
             span {
                 font-size: 1rem;
                 width: 15px;
-                
+                a {
+                    color: #FFFFFF;
+                }
             }
             
             .footer-border {
@@ -100,6 +102,7 @@
             @media screen and (max-width: 412px) {
                 & {
                     margin: 10px 0;
+                    
                     
                     p {
                         font-size: 1rem;

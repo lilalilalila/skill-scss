@@ -14,6 +14,10 @@
         font-size: 12px !important;
     }
 
+body {
+    overflow-x: hidden;
+}
+
 .header {
     .nav {
         > div {
@@ -417,6 +421,11 @@
         @include li-between;
         overflow-x: hidden;
         padding-left: 4%;
+        @media screen and (max-width: 400px) {
+            & {
+                padding-left: 8%;
+            }
+        }
         
         @media screen and (max-width: 1200px) {
             & {
@@ -433,6 +442,10 @@
             margin: 0;
             padding-bottom: 5px;
             
+            &:hover {
+                    border-bottom: 1px solid $font;
+                }
+            
             @media screen and (max-width: 810px) {
                 & {
                     width: 70px !important;
@@ -442,10 +455,6 @@
             
             a {
                 color: $font;
-                
-                &:hover {
-                    border-bottom: 1px solid $font;
-                }
             }
         }
             
