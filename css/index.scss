@@ -420,12 +420,7 @@ body {
         color: $font;
         @include li-between;
         overflow-x: hidden;
-        padding-left: 4%;
-        @media screen and (max-width: 400px) {
-            & {
-                padding-left: 8%;
-            }
-        }
+        
         
         @media screen and (max-width: 1200px) {
             & {
@@ -439,7 +434,8 @@ body {
             font-size: 0.9rem;
             width: 60px !important;
             padding-left: 10px;
-            margin-right: 2.5%;
+            margin-left: 2.357%;
+            margin-right: 2.357%;
             margin-top: 0;
             margin-bottom: 0;
             

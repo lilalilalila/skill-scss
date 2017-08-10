@@ -955,7 +955,6 @@ body {
   /* for ie */
   width: 100%;
   overflow-x: hidden;
-  padding-left: 4%;
 }
 
 .main-link ul:after {
@@ -976,12 +975,6 @@ body {
   margin: 13px 0;
 }
 
-@media screen and (max-width: 400px) {
-  .main-link ul {
-    padding-left: 8%;
-  }
-}
-
 @media screen and (max-width: 1200px) {
   .main-link ul {
     width: 100% !important;
@@ -993,7 +986,8 @@ body {
   font-size: 0.9rem;
   width: 60px !important;
   padding-left: 10px;
-  margin-right: 2.5%;
+  margin-left: 2.357%;
+  margin-right: 2.357%;
   margin-top: 0;
   margin-bottom: 0;
   border-bottom: 1px solid transparent;
