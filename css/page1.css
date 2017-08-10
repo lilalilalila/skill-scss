@@ -487,7 +487,7 @@ body {
 
 .main > div .main-left ul {
   width: 100%;
-  padding-bottom: 10%;
+  padding-bottom: 10px;
   padding-left: 5%;
   color: #ff7527;
 }
@@ -496,7 +496,7 @@ body {
   width: 66px;
   margin-left: auto;
   margin-right: auto;
-  margin-top: 10%;
+  margin-top: 10px;
   text-align: left;
   list-style: circle;
 }
