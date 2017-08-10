@@ -435,12 +435,20 @@ body {
             
         li {
             float: left;
+            
             font-size: 0.9rem;
-            list-style: disc;
-            width: 10% !important;
-            display: list-item;
-            margin: 0;
-            padding-bottom: 5px;
+            width: 60px !important;
+            padding-left: 10px;
+            margin-right: 2.5%;
+            margin-top: 0;
+            margin-bottom: 0;
+            
+            border-bottom: 1px solid transparent;
+            background-image: url('../img/未标题-1.png');
+            @include bg-img(
+                    $bg-s-x: 5px,
+                    $bg-s-y: 5px,
+                    $bg-p: left)
             
             &:hover {
                     border-bottom: 1px solid $font;
@@ -448,7 +456,6 @@ body {
             
             @media screen and (max-width: 810px) {
                 & {
-                    width: 70px !important;
                     margin-bottom: 1%;
                 }
             }
